@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %} IP Finder {% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+    <br>
+    <br>
+    <h1>IPv4 Geolocation Finder</h1>
+
+    <br>
+    <br>
+
+    <form action="{{url_for('ipAdd')}}" method="post">
+
+        <div class="form-group">
+
+            <input type="text" name = "search" class="form-control" placeholder="Enter IPv4 Address">
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Search">
+        <input type="reset" class="btn btn-primary" value="Clear">
+    </form>
+
+    <br>
+    <br>
+
+    <p>IP Address is : {{data.ip}}</p>
+    <p>City Location is : {{data.city}}</p>
+    <p>IP Country is : {{data.country}}</p>
+    <p>Latitude Information Is : {{data.latitude}}</p>
+    <p>Longitude Information Is : {{data.longitude}}</p>
+    <p>Postal Code Is : {{data.postal}}</p>
+    <p>Time Zone Information Is : {{data.timezone}}</p>
+</div>
+
+
+{% endblock %}
