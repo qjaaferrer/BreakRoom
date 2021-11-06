@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+<style>
+body{
+
+    background-image: url('https://images5.alphacoders.com/575/thumb-1920-575881.jpg');
+}
+div {
+  background: rgb(255, 255, 255, 0.6);
+  width: 320px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: auto;
+  font-family: 'Lexend Deca';
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color:rgb(251, 255, 251); left:0px; top:0px;}
+}
+
+table, th, td {
+  border: 1px solid black;
+  font-family: "Lucida Console", 'Courier New', Courier, monospace;
+}
+table {
+  width: 40%;
+}
+
+h1{text-align: center;}
+div{text-align: center;}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+
+</style>
+
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 
     <title>{% block title %} {% endblock %}</title>
+
 </head>
 <body>
 
