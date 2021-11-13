@@ -8,11 +8,12 @@
 
     <br>
     <br>
+    
     <h1>IPv4 Geolocation Finder</h1>
 
     <br>
     <br>
-
+    
     <form action="{{url_for('ipAdd')}}" method="post">
 
         <div class="form-group">
@@ -27,13 +28,42 @@
     <br>
     <br>
 
-    <p>IP Address is : {{data.ip}}</p>
-    <p>City Location is : {{data.city}}</p>
-    <p>IP Country is : {{data.country}}</p>
-    <p>Latitude Information Is : {{data.latitude}}</p>
-    <p>Longitude Information Is : {{data.longitude}}</p>
-    <p>Postal Code Is : {{data.postal}}</p>
-    <p>Time Zone Information Is : {{data.timezone}}</p>
+    <table class = "center">
+        <tr>
+        <th>IP Address</th> 
+        <td>{{data.ip}}</td>
+        </tr>
+
+        <tr>
+        <th>City Location</th> 
+        <td>{{data.city}}</td>
+        </tr>
+
+        <tr>
+        <th>IP Country</th> 
+        <td>{{data.country}}</td>
+        </tr>
+
+        <tr>
+        <th>Latitude Information</th>
+        <td>{{data.latitude}}</td>
+        </tr>
+
+        <tr>
+        <th>Longitude Information</th>
+        <td>{{data.longitude}}</td>
+        </tr>
+
+        <tr>
+        <th>Postal Code</th>
+        <td>{{data.postal}}</td>
+        </tr>
+
+        <tr>
+        <th>Time Zone Information </th>
+        <td>{{data.timezone}}</td>
+        </tr>
+    </table>
 </div>
 
 
